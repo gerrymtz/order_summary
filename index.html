@@ -5,28 +5,63 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/styles.css">
+		<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
 		<title>Order summary card</title>
 	</head>
 
 	<body>
 
-		Order Summary
+		<main class="main">
 
-		You can now listen to millions of songs, audiobooks, and podcasts on any 
-		device anywhere you like!
+			<section class="content">
 
-		Annual Plan
-		$59.99/year
+				<section class="content__container container">
 
-		Change
+					<article class="card">
+						<img src="assets/images/illustration_hero.svg" alt="Icon Music" class="card__img">
 
-		Proceed to Payment
-		Cancel Order
+						<p class="card__title">Order Summary</p>
+
+						<p class="card__paragraph">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+
+						<div class="card__details">
+							<div class="details__figure">
+								<img src="assets/images/icon_music.svg" alt="Icon Music" class="details__img" loading="eager">
+
+								<div class="details__plan">
+									<p class="plan__time">Annual Plan</p>
+									<p class="plan__price">$59.99/year</p>
+								</div>
+							</div>
+
+							<a href="#" class="details__change">Change</a>
+						</div>
+
+						<button type="button" class="card__buton card__button--payment">Proceed to Payment</button>
+
+						<a href="#" class="card__cancel">Cancel Order</a>
+					</article>
+
+				</section>
+
+			</section>
+
+		</main>
+
+		<footer class="footer">
+
+			<section class="credits">
+
+				<section class="credits__container container">
+					<p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+
+					<p>Coded by <a href="#">Gerardo Martínez</a>.</p>
+				</section>
+
+			</section>
+
+		</footer>
 		
-		<div class="attribution">
-			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-			Coded by <a href="#">Your Name Here</a>.
-		</div>
 	</body>
 
 </html>
