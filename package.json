@@ -1,0 +1,27 @@
+{
+  "name": "order_summary",
+  "version": "1.0.0",
+  "description": "Challenge frontend mentor",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gerrymtz/order_summary.git"
+  },
+  "keywords": [
+    "HTML5",
+    "CSS3",
+    "SASS"
+  ],
+  "author": "Gerardo Martínez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gerrymtz/order_summary/issues"
+  },
+  "homepage": "https://github.com/gerrymtz/order_summary#readme",
+  "devDependencies": {
+    "sass": "^1.50.0"
+  }
+}
