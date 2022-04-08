@@ -13,8 +13,6 @@ html {
 
 body {
     @include index.setBody;
-    background-image: url(../assets/images/pattern_background_desktop.svg);
-    background-repeat: no-repeat
 }
 
 .container {
@@ -22,20 +20,23 @@ body {
 }
 
 .main {
+    outline: 2px solid black;
 
     .content {
+        background-image: url(../assets/images/pattern_background_desktop.svg);
+        background-repeat: repeat-x;
 
         .content__container {
-            height: 90vh;
             display: flex;
             justify-content: center;
-            align-items: center;
 
             .card {
                 width: 350px;
                 height: max-content;
                 box-shadow: 0 0 10px rgb(0, 0, 0);
                 border-radius: 15px;
+                background-color: white;
+                font-family: index.$redHatDisplay;
 
                 .card__img {
                     display: block;
@@ -43,6 +44,19 @@ body {
                     height: 200px;
                     object-fit: cover;
                     border-radius: 15px 15px 0 0;
+                }
+
+                .card__container {
+                    width: 80%;
+                    margin: 0 auto;
+                    padding: 30px 0;
+
+                    .card__title {
+                        font-size: 22px;
+                        font-weight: index.$redHatDisplayW900;
+                        text-align: center;
+                    }
+
                 }
 
             }
