@@ -9,12 +9,15 @@
 }
 
 html {
-  height: 100%;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 body {
-  min-height: 100vh;
   width: 100%;
+  min-height: 100vh;
+  background-color: hsl(225deg, 100%, 94%);
 }
 
 .container {
@@ -25,12 +28,14 @@ body {
   padding: 80px 0;
 }
 
-.main {
-  outline: 2px solid black;
-}
 .main .content {
   background-image: url(../assets/images/pattern_background_desktop.svg);
   background-repeat: repeat-x;
+}
+@media screen and (max-width: 425px) {
+  .main .content {
+    background-image: url(../assets/images/pattern_background_mobile.svg);
+  }
 }
 .main .content .content__container {
   display: flex;
@@ -42,7 +47,11 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
   background-color: white;
-  font-family: "Red Hat Display", sans-serif;
+}
+@media screen and (max-width: 425px) {
+  .main .content .content__container .card {
+    width: 90%;
+  }
 }
 .main .content .content__container .card .card__img {
   display: block;
@@ -55,6 +64,8 @@ body {
   width: 80%;
   margin: 0 auto;
   padding: 30px 0;
+  display: flex;
+  flex-direction: column;
 }
 .main .content .content__container .card .card__container .card__title {
   font-size: 22px;
@@ -64,7 +75,6 @@ body {
 }
 .main .content .content__container .card .card__container .card__paragraph {
   font-size: 16px;
-  font-weight: 500;
   color: hsl(224deg, 23%, 55%);
   margin-bottom: 15px;
   text-align: center;
@@ -78,14 +88,26 @@ body {
   border-radius: 10px;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 425px) {
+  .main .content .content__container .card .card__container .card__details {
+    padding: 15px;
+    font-size: 13px;
+  }
+}
 .main .content .content__container .card .card__container .card__details .details__figure {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
 }
 .main .content .content__container .card .card__container .card__details .details__figure .details__img {
   display: block;
   object-fit: contain;
+}
+@media screen and (max-width: 425px) {
+  .main .content .content__container .card .card__container .card__details .details__figure .details__img {
+    width: 35px;
+    height: 35px;
+  }
 }
 .main .content .content__container .card .card__container .card__details .details__figure .details__plan .plan__time {
   font-weight: 900;
@@ -100,6 +122,7 @@ body {
 }
 .main .content .content__container .card .card__container .card__details .details__change:hover {
   opacity: 0.6;
+  text-decoration: none;
 }
 .main .content .content__container .card .card__container .card__buton {
   background-color: hsl(245deg, 75%, 52%);
@@ -116,20 +139,32 @@ body {
   cursor: pointer;
 }
 .main .content .content__container .card .card__container .card__buton:hover {
-  opacity: 0.6;
+  opacity: 0.75;
 }
 .main .content .content__container .card .card__container .card__cancel {
-  display: block;
-  text-align: center;
   text-decoration: none;
-  font-family: "Red Hat Display", sans-serif;
-  font-size: 15px;
   font-weight: 900;
   color: hsl(224deg, 23%, 55%);
+  align-self: center;
   margin-bottom: 10px;
 }
 .main .content .content__container .card .card__container .card__cancel:hover {
   color: hsl(223deg, 47%, 23%);
+}
+
+.footer .credits .credits__container {
+  padding: 0;
+}
+.footer .credits .credits__container .credits__paragraph {
+  text-align: center;
+}
+.footer .credits .credits__container .credits__paragraph .credits__link {
+  color: hsl(224deg, 23%, 55%);
+  font-weight: 700;
+}
+.footer .credits .credits__container .credits__paragraph .credits__link:hover {
+  color: hsl(223deg, 47%, 23%);
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
